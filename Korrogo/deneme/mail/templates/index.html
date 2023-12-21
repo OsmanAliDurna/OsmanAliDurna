@@ -1,0 +1,35 @@
+<h1>Home Page</h1>
+
+<div id="Bilgiler">
+    <form action="index" method="POST">
+
+        <label for="name">Adınızı giriniz :</label>
+        <br>
+        <input type="text" name="name">
+        <br> <br>
+        <label for="name">E-mail adresinizi giriniz :</label>
+        <br>
+        <input type="email" name="email">
+        <br> <br>
+        <label for="name">Kayıt olduğunuz tarhi sistemden otomatik alınacaktır.</label>
+        <br>
+        <input type="date" name="date">
+        <br> <br>
+        <input type="submit" value="Mail Gönder">
+
+    </form>
+</div>
+
+<div id="Bilgiler">
+    <!-- {% for info in mailInfo %}
+    <p>Müşteriler</p>
+    <p>{{ info.name }}</p>
+    <p>{{ info.eMail }}</p>
+    <p>{{ info.date }}</p>
+    {% endfor %} -->
+    
+    <p>Müşteriler</p>
+    <p>{{ request.POST.name }}</p>
+    <p>{{ request.POST.email }}</p>
+    <p>{{ request.POST.date }}</p>
+</div>
