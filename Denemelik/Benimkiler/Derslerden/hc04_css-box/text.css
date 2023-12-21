@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  color: blue;
+}
+
+.container{
+    font-size: 32px;
+}
+
+#par1 {
+  text-align: center;
+  color: rgb(120, 45, 97);
+  font-size: 2rem;
+}
+
+#par2 {
+  text-align: right;
+  color: hsl(0, 30%, 50%);
+  direction: rtl;
+  unicode-bidi: isolate-override;
+  font-size: 2em;
+}
+
+#par3 {
+  text-align: justify;
+  color: red;
+  text-transform: uppercase;
+}
+
+#par4 {
+  text-align: left;
+  color: green;
+  text-decoration: underline;
+}
+
+#par5 {
+  text-align: center;
+  color: blue;
+  text-decoration: line-through wavy;
+}
+
+#par6 {
+  color: fuchsia;
+  text-decoration: overline underline;
+  column-count: 3;
+  column-rule: 5px dotted blue;
+  -webkit-column-count: 3;
+  -moz-column-rule: 5px dotted blue;
+}

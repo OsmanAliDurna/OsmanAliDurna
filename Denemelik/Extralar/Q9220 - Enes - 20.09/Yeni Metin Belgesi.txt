@@ -1,0 +1,35 @@
+index.html:
+
+<!-- nav tag  -->
+
+<!-- mail atabilmek ve telefon açabilmek için -->
+
+<!-- main gövdesini oluşturmuş courses ve studens adı altında iki section oluşturmuş. Courses section ı 3 article a bölünmüş. Studens sectionu studens paragraflarını ve resimleri  ve linkleri içeren iki article a bölünmüş -->
+
+
+
+
+iframe :
+
+map
+
+video 
+
+audio
+
+
+
+
+form :
+
+isim  :text
+email  :text
+password :password
+yas : number
+gender  :radio
+language : checkbox
+tarih : date
+select
+textarea
+butonlar
+

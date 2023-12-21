@@ -1,0 +1,17 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "description": "sass tutorial",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "burak",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

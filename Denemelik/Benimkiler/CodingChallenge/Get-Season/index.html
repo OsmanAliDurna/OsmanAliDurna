@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Season</title>
+</head>
+
+<body>
+    <script>
+        let month = Number(prompt("Please enter the month like (1-12):"));
+        let day = Number(prompt("Please enter the day like (1-31):"));
+        let dayOfJear = 1;
+
+        if (0 < month && month < 13) {
+            switch (month) {
+                case 1:
+                    if (0 < day && day < 32) {
+                        dayOfJear = day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 2:
+                    if (0 < day && day < 29) {
+                        dayOfJear = 31 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 3:
+                    if (0 < day && day < 32) {
+                        dayOfJear = 59 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 4:
+                    if (0 < day && day < 31) {
+                        dayOfJear = 90 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 5:
+                    if (0 < day && day < 32) {
+                        dayOfJear = 120 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 6:
+                    if (0 < day && day < 31) {
+                        dayOfJear = 151 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 7:
+                    if (0 < day && day < 32) {
+                        dayOfJear = 181 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 8:
+                    if (0 < day && day < 32) {
+                        dayOfJear = 212 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 9:
+                    if (0 < day && day < 31) {
+                        dayOfJear = 243 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 10:
+                    if (0 < day && day < 32) {
+                        dayOfJear = 273 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 11:
+                    if (0 < day && day < 31) {
+                        dayOfJear = 304 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+                case 12:
+                    if (0 < day && day < 32) {
+                        dayOfJear = 334 + day;
+
+                        if (dayOfJear <= 52 || dayOfJear >= 355) {
+                            console.log(`The season for ${month}/${day} is Winter.`);
+                        } else if (dayOfJear <= 151) {
+                            console.log(`The season for ${month}/${day} is Spring.`);
+                        } else if (dayOfJear <= 264) {
+                            console.log(`The season for ${month}/${day} is Summer.`);
+                        } else {
+                            console.log(`The season for ${month}/${day} is Fall.`);
+                        }
+                    } else {
+                        console.log('Invalid month or day. Please enter valid values.');
+                    }
+                    break;
+
+                default:
+                    console.log('Invalid month or day. Please enter valid values.');
+                    break;
+            }
+
+        } else {
+            console.log('Invalid month or day. Please enter valid values.');
+        }
+    </script>
+</body>
+
+</html>

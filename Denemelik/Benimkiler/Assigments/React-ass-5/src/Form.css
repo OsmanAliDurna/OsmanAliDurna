@@ -1,0 +1,12 @@
+.oynak{
+    animation: relax 1s infinite;
+}
+
+@keyframes relax {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}

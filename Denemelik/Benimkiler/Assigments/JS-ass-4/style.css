@@ -1,0 +1,6 @@
+#searchDiv {
+  max-height: 200px;
+  max-width: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

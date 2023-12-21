@@ -1,0 +1,14 @@
+.headerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  background-color: blueviolet;
+  gap: 1rem;
+  padding: 1rem;
+  > img{
+      height: 100px;
+  }
+  > h1{
+    font-size: 5rem;
+  }
+}

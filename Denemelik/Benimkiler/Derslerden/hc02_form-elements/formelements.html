@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+
+<body>
+    <form action="">
+        <!---   TEXT    -->
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" name="text" id="text" required placeholder="Lütfen isminizi giriniz.">
+        </section>
+        <br>
+
+        <!---   EMAİL  -->
+        <section>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="isminiz@mail.com şeklinde giriniz.">
+        </section>
+        <br>
+
+        <!---   AGE    -->
+        <section>
+            <label for="age">Yaşınız:</label>
+            <input type="number" name="number" id="number" required min="0" max="100"
+                placeholder="Lütfen yaşınızı giriniz.">
+        </section>
+        <br>
+
+        <!---   PASSWORD    -->
+        <section>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required minlength="8" maxlength="12"
+                placeholder="Lütfen şifrenizi giriniz.">
+        </section>
+        <br>
+
+        <!---   GENDER(RADIO)    -->
+        <section>
+            <label for="">Gender:</label>
+            <label for="male">Male:</label>
+            <input type="radio" name="gender" id="male" required />
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="female" checked />
+        </section>
+        <br>
+
+        <!-- DATE -->
+        <section>
+            <label for="tarih">Dogum Tarihi</label> <br />
+            <input type="date" name="tarih" id="tarih" min="1990-01-01" />
+        </section>
+        <br />
+
+        <!-- SELECT -->
+        <section>
+            <select name="tatli" id="tatli">
+                <optgroup label="şerbetli tatlilar">
+                    <option value="künefe">Künefe</option>
+                    <option value="havuç dilimi">H. Dilimi</option>
+                </optgroup>
+
+                <optgroup label="sütlü tatlılar">
+                    <option value="sütlaç">Sütlaç</option>
+                    <option value="kazandibi">Kazandibi</option>
+                </optgroup>
+            </select>
+        </section>
+        <br />
+
+        <!-- TEXTAREA -->
+        <section>
+            <label for="yorum">Yorumlarınızı Giriniz:</label>
+            <br />
+            <textarea name="yorum" id="yorum" cols="40" rows="10" style="resize: none" maxlength="100"
+                placeholder="En fazla 100 karakter girilebilir"></textarea>
+        </section>
+        <br />
+
+        <!-- BUTTONS -->
+        <section>
+            <input type="submit" value="Kaydet" />
+            <button type="reset">Sil</button>
+        </section>
+
+    </form>
+
+</body>
+
+</html>

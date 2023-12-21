@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Collapsing (En dıştakinde padding veya border yoksa,
+ içerdeki ve sınırlardaki elementlerde hatalar olabiliyor.)*/
+section {
+  background-color: orange;
+  /* border: 1px solid red; 
+   padding: 50px; */
+  margin: 30px;
+}
+
+section {
+  background-color: orange;
+  border: 1px solid black;
+  margin: 30px;
+}
+
+.box1 {
+  background-color: magenta;
+  width: 150px;
+  height: 150px;
+  border: 2px solid blue;
+  padding: 50px;
+  margin: 50px;
+}
+
+.box2 {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  padding: 50px;
+}
+
+.box3 {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+  border: 2px solid green;
+  padding: 50px;
+}

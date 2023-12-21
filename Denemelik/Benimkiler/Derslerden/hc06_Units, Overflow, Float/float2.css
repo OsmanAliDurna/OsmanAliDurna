@@ -1,0 +1,50 @@
+* {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: seagreen;
+  margin-top: 10px;
+}
+
+main {
+  background-color: skyblue;
+  padding: 5px;
+  /* height: 300px; */ /* 1. yöntem*/
+  /* overflow: auto; */ /* 2. yöntem*/
+}
+
+aside {
+  background-color: darkorange;
+  width: 25%;
+  height: 300px;
+  float: left;
+}
+
+article {
+  background-color: greenyellow;
+  width: 70%;
+  height: 300px;
+  float: left;
+}
+
+footer {
+  background-color: coral;
+}
+
+/*3. yöntem*/
+/* 
+.clear { 
+  clear: both;
+  border: none;
+} */
+
+/*4. yöntem Best - Practice */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: flex;
+  /* display: table; */
+}

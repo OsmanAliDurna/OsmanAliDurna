@@ -1,0 +1,10 @@
+@mixin display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-light {
+    background-color: $bg-light;
+    color: $text-dark;
+}

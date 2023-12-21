@@ -1,0 +1,16 @@
+@import "variables";
+
+/*! mixin @include */
+/* fonksiyon tanımlıyoruz aslında. Bu fonksiyon parametre alabilen bir fonksiyon. Parametreleri tanımalrken $ işaretini kullanıyoruz. Mixinler parametre almak zorunda değildir. yani static yapılar da oluşturabiliriz. */
+/*mixinleri çaığırırken @include anahtar kelimesiyle çağırıyoruz.*/
+
+@mixin card($bgc, $c) {
+    background-color: $bgc;
+    color: $c;
+    border: $myBorder;
+    text-align: center;
+    width: 25%;
+    height: 15rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}

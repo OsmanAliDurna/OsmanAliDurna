@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Furnishing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="container__nav">
+            <div class="container__navbar--left">
+                <div class="navbar__logo">
+                    <img src="./img/logo.png" alt="logo" width="400px">
+                </div>
+                <div class="navbar__categories">
+                    <form action="/action_page.php">
+                        <select name="Categories" id="category">
+                            <option value="All Categories" selected>All Categories</option>
+                            <option value="Wooden">Wooden</option>
+                            <option value="Linen">Linen</option>
+                            <option value="Bedroom">Bedroom</option>
+                            <option value="Kitchen">Kitchen</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="navbar__search">
+                    <input type="search" name="search" id="search" placeholder="Enter a word">
+                    <img src="./img/magnifier.png" alt="magnifier">
+                </div>
+                <div class="navbar__communication">
+                    <p class="navbar__communication--number">0 800 456 80 80</p>
+                    <p class="navbar__communication--support">Support 24/7</p>
+                </div>
+            </div>
+
+            <div class="container__navbar--right">
+                <div class="navbar__right--img"><img src="./img/user.png" alt="user"></div>
+                <div class="navbar__right--img"><img src="./img/heart.png" alt="heart"></div>
+                <div class="navbar__right--img"><img src="./img/shoppingCart.png" alt="shopping chart"></div>
+            </div>
+        </nav>
+        <hr>
+        <header class="header">
+            <div class="header__div--button-choose">
+                <img class="header__img" src="./img/unordered-list.png" alt="unordered list">
+                <p class="header__p">Select By Categories</p>
+            </div>
+            <div class="header__div--headline">
+                <p class="headline__p headline__p--Wooden">Wooden</p>
+                <p class="headline__p headline__p--Linen">Linen</p>
+                <p class="headline__p headline__p--Linen">Linen</p>
+                <p class="headline__p headline__p--Linen">Linen</p>
+                <p class="headline__p headline__p--Linen">Linen</p>
+            </div>
+        </header>
+        <div class="headerimgpart">
+            <div class="headerimgpart__div--left">
+                <p>Furniture essentials to a functional home design</p>
+                <img src="./img/sofa.png" alt="sofa">
+            </div>
+            <div class="headerimgpart__div--right">
+                <p>Why is lighting is important in design</p>
+                <img src="./img/armchair.png" alt="armchair">
+            </div>
+        </div>
+        <div class="category">
+            <p class="category__p">Browse By Category</p>
+            <div class="category__roomcontent">
+                <div class="roomcontent__same">
+                    <p>Living Room</p>
+                    <img src="./img/living-room.jpg" alt="living room">
+                </div>
+                <div class="roomcontent__same">
+                    <p>Kitchen</p>
+                    <img src="./img/kitchen.jpg" alt="living room">
+                </div>
+                <div class="roomcontent__same">
+                    <p>Bedroom</p>
+                    <img src="./img/bedroom.jpg" alt="living room">
+                </div>
+                <div class="roomcontent__same">
+                    <p>Accesories</p>
+                    <img src="./img/accesories.png" alt="living room">
+                </div>
+            </div>
+        </div>
+        <div class="Products category">
+            <p class="Products__p category__p">Browse By Products</p>
+            <div class="Products__roomcontent category__roomcontent">
+                <div class="Products__rc">
+                    <img src="./img/bed.jpg" alt="living room">
+                    <p>Beds</p>
+                </div>
+                <div class="Products__rc">
+                    <img src="./img/linen.jpeg" alt="living room">
+                    <p>Linens</p>
+                </div>
+                <div class="Products__rc">
+                    <img src="./img/carpet.jpg" alt="living room">
+                    <p>Carpets & Rugs</p>
+                </div>
+                <div class="Products__rc">
+                    <img src="./img/shelfs.jpg" alt="living room">
+                    <p>Shelf & Bookcases</p>
+                </div>
+                <div class="Products__rc">
+                    <img src="./img/dining-table.jpg" alt="living room">
+                    <p>Dining Tables</p>
+                </div>
+                <div class="Products__rc">
+                    <img src="./img/kids.jpg" alt="living room">
+                    <p>Kids Room</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div>
+                <p>Looking for expert guidance to design <span>your home?</span></p>
+                <p>Leave your information here and receive consultation with our interior design experts.</p>
+            </div>
+            <form action="">
+                <label for="Name">Full Name*</label>
+                <input type="text" id="Name" name="Name">
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email">
+                <label for="number">Phone Number*</label>
+                <input type="tel" name="number" id="number">
+                <input type="submit" value="Gönder">
+            </form>
+        </div>
+        <footer class="footer">
+            <div>
+                <p>©<span id="year"></span>. All Rights Reserved by Muaz</p>
+            </div>
+            <div>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Sevice</a></p>
+            </div>
+        </footer>
+
+        <script>
+            // Tarih nesnesini oluşturun
+            let currentDate = new Date();
+
+            // Yıl bilgisini alın
+            let currentYear = currentDate.getFullYear();
+
+            // İlgili HTML öğesini seçin (örneğin, bir div veya span)
+            let yearElement = document.getElementById("year");
+
+            // HTML içine güncel yılı yerleştirin
+            yearElement.innerHTML = currentYear;
+        </script>
+    </div>
+    <div class="bosdiv"></div>
+
+
+</body>
+
+</html>

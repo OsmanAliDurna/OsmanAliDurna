@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --Light_red: hsl(0, 100%, 67%);
+  --Orange_yellow: hsl(39, 100%, 56%);
+  --Green_teal: hsl(166, 100%, 37%);
+  --Cobalt_blue: hsl(234, 85%, 45%);
+
+  --Light_slate_blue: hsl(252, 100%, 67%);
+  --Light_royal_blue: hsl(241, 81%, 54%);
+  --Violet_blue: hsla(256, 72%, 46%, 1);
+  --Persian_blue: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Pale_blue: hsl(221, 100%, 96%);
+  --Light_lavender: hsl(241, 100%, 89%);
+  --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.main {
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  flex: 1;
+  background: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
+  padding: 1rem;
+}
+
+.left h3 {
+  margin: 1rem auto;
+}
+
+.left h2 {
+  margin: 1rem auto;
+}
+
+.left > p {
+  font-size: 0.7rem;
+  width: 66%;
+}
+
+.score {
+  box-shadow: 1px 10px 50px blue inset;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.right {
+  flex: 1;
+}

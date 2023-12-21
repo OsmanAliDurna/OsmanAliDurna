@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAYIT FORMU</title>
+</head>
+
+<style>
+    form {
+        text-align: center;
+        border: solid;
+        width: 210px;
+    }
+
+    input {
+        margin: 1px;
+        display: block;
+        align-content: center;
+        width: 200px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>CODEBREAKER</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="rules.html">SINAV KURALLARI</a>
+        <a href="#">QUİZ</a>
+    </nav>
+    <br>
+
+    <main>
+        <form action="">
+
+            <!---   İSİM    -->
+            <section>
+                <label for="name">İSİM:</label>
+                <input type="text" name="text" id="text" required placeholder="Lütfen isminizi giriniz.">
+            </section>
+            <br>
+
+            <!---   DOĞUM TARİHİ    -->
+            <section>
+                <label for="date">DOĞUM TARİHİ:</label>
+                <input type="date" name="date" id="date" required>
+            </section>
+            <br>
+
+            <!---   EMAİL    -->
+            <section>
+                <label for="email">E-MAİL:</label>
+                <input type="email" name="email" id="email" required placeholder="Lütfen e-mailinizi giriniz.">
+            </section>
+            <br>
+
+            <!---   TELEFON NUMARASI    -->
+            <section>
+                <label for="tel">TELEFON NUMARASI:</label>
+                <input type="tel" name="tel" id="tel" required placeholder="Lütfen telefon numaranızı giriniz.">
+            </section>
+            <br>
+
+            <!---   ÖĞRENCİ NUMARASI    -->
+            <section>
+                <label for="numara">ÖĞRENCİ NUMARASI:</label>
+                <input type="number" name="numara" id="numara" required min="1000" max="9999">
+            </section>
+            <br>
+
+            <!---   BUTONLAR    -->
+            <section>
+                <input type="submit" name="submit" id="submit" value="Gönder">
+                <input type="reset" name="reset" id="reset" value="Sil">
+            </section>
+            <br>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+.container {
+  margin: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(62, 62, 62);
+  border-radius: 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
+
+h1 > span {
+  color: red;
+}
+
+figure {
+  text-align: center;
+  padding: 50px;
+}
+
+img {
+  width: 40%;
+  border-radius: 15%;
+  padding: 10px;
+  box-shadow: 5px 5px 500px red;
+}
+
+.article {
+  margin: 0 80px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Lobster", cursive;
+}
+
+.masterpieces > ul {
+  margin: 0 80px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+h2 {
+  color: red;
+  margin: 0 80px;
+  padding: 10px;
+}
+
+li {
+  margin: 0 30px;
+  padding: 10px;
+}
+
+footer {
+  font-size: 25px;
+  padding: 0px;
+  text-align: center;
+}
+
+a {
+  margin: 5px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(245, 154, 74);
+  border-radius: 10%;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  background-color: rgb(62, 62, 62);
+  color: rgba(255, 0, 0, 0.744);
+}

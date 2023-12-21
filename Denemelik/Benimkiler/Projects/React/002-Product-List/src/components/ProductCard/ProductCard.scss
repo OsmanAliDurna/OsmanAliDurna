@@ -1,0 +1,45 @@
+.allProduct{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.desc{
+    width: 400px;
+    font-size: 2rem;
+    visibility: hidden;
+    text-align: center;
+}
+
+.price{
+    color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+    left: 170px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.7;
+
+    &:hover{
+        opacity: 1;
+        > .desc{
+            visibility: visible;
+            transform: translateX(0%);
+        }
+    }
+}

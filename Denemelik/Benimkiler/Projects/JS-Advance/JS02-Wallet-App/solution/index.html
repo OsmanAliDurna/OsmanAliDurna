@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="d-flex flex-column align-items-center">
+    <header class="text-warning fs-1">My Wallet App 💳</header>
+
+    <main class="container w-100 text-center m-5 border border-dark">
+
+        <form action="" method="get">
+
+            <h2>Harcama Formu</h2>
+
+            <section class="d-flex flex-row gap-3 p-2">
+                <section class="tarihAlanı w-50">
+                    <label for="tarih">Tarih</label><br>
+                    <input type="date" name="tarih" class="tarih w-100" value="">
+                </section>
+
+                <section class="miktarAlanı w-50">
+                    <label for="miktar">Harcama Miktar</label><br>
+                    <input type="number" name="miktar" placeholder="1000" class="miktar w-100" value="">
+                </section>
+            </section>
+            <section class="harcamalar">
+                <label for="harcamaAlanı">Harcama Alanı</label><br>
+                <input type="text" name="harcamaAlanı" placeholder="Kira, Fatura, Kredi Kartı" class="harcamaAlanı"
+                    value="">
+            </section>
+
+            <input type="button" value="Kaydet" class="kaydet text-bg-danger rounded shadow-none ps-3 pe-3 ">
+        </form>
+
+    </main>
+
+    <section class=" container gelirAlanı w-100 d-flex justify-content-around p-3 m-3">
+        <input type="number" name="miktar" placeholder="Gelirinizi giriniz." class="gelir w-50" value="">
+        <input type="button" name="ekle" class="ekle bg-success text-light text-center w-25" value="Ekle">
+    </section>
+
+    <footer class="container w-100">
+        <section class="gelir">
+
+        </section>
+
+        <section class="kaydedilenler border border-dark">
+            <table class="harcamalarTablosu table-bordered text-center">
+                <tr>
+                    <th class="w-50">Tarih</th>
+                    <th class="w-50">Harcama Alanı</th>
+                    <th class="w-auto">Miktar (t)</th>
+                    <th class="w-auto">İşlem</th>
+                </tr>
+            </table>
+        </section>
+
+        <section class="gelirgider">
+            <table>
+                <tr>
+                    <td><b>Geliriniz (t) :</b></td>
+                    <td class="gelirBilgisi">0</td>
+                </tr>
+                <tr>
+                    <td><b>Gideriniz (t) :</b></td>
+                    <td class="giderBilgisi">0</td>
+                </tr>
+                <tr>
+                    <td><b>Kalan (t) :</b></td>
+                    <td class="kalanBilgisi">0</td>
+                </tr>
+            </table>
+        </section>
+
+        <button type="button" class="reset p-1 rounded bg-secondary text-light">Bilgileri Temizle</button>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="App.js"></script>
+</body>
+
+</html>

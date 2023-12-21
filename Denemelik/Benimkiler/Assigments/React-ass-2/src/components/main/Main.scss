@@ -1,0 +1,49 @@
+.card{
+    height: 400px;
+    width: 600px;
+    > span{
+        visibility: hidden;
+        font-size: 1.2rem;
+    }
+}
+
+h2{
+    position: relative;
+    top: 1rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 10px;
+    color: rgb(182, 139, 47);
+    background-color: black;
+    opacity: 0.8;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p{
+    display: inline;
+    position: relative;
+    padding: 0.6rem;
+    left: 3rem;
+    top: 9rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: rgb(182, 139, 47);
+    background-color: black;
+    opacity: 0.8;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 5rem;
+}
+
+
+.card:hover{
+    > span{
+        visibility: visible;
+    }
+}

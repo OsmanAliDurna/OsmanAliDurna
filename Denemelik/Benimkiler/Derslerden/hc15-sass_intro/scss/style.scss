@@ -1,0 +1,163 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $fontColor;
+  background-color: $bgColor;
+}
+
+header {
+  background-color: $navBgColor;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 80px;
+    border: $myBorder;
+    border-radius: 10px;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $bannerBgColor;
+  line-height: 2rem;
+
+  img {
+    width: 40%;
+    height: 300px;
+    max-width: 600px;
+    min-width: 300px;
+  }
+
+  aside {
+    button {
+      border: none;
+      background-color: $buttonColor;
+      border-radius: 10px;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $bgColor;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.cards {
+  display: flex;
+
+  .card1 {
+    @include card(yellow, blue);
+  }
+
+  .card2 {
+    @include card(red, yellow);
+  }
+
+  .card3 {
+    @include card(black, white);
+  }
+
+  .card4 {
+    @include card(brown, blue);
+  }
+}
+
+.articles {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .article1 {
+    background-color: gray;
+    flex: 1;
+    height: 10rem;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .article2 {
+    @extend .article1;
+    background-color: green;
+  }
+
+}
+
+footer {
+  p {
+    background-color: $bannerBgColor;
+  }
+
+  .social-icons {
+    display: flex;
+
+    $textColors: black,
+      red,
+      brown,
+      wheat,
+      orangered;
+
+    @for $i from 1 through length($textColors) {
+      .social#{$i} {
+        flex: 1;
+        font-size: $i * 1rem;
+        padding-top: 4px;
+
+        // background-color: darken(grey, $i * 3);
+        @if $i % 2==0 {
+          background-color: darken(yellow, $i * 5);
+        }
+
+        @else {
+          background-color: lighten(blue, $i * 5);
+        }
+
+        @if $i<4 {
+          text-decoration: overline;
+        }
+
+        @else {
+          text-decoration: underline;
+        }
+
+        color: nth($textColors, $i)
+      }
+    }
+
+  }
+}

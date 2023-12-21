@@ -1,29 +1,22 @@
 ### Hi there 👋 I'm Osman Ali DURNA.
+Here are some ideas to know me more:
 
-<br/>
-
-![](https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif)
-
-<br/>
-
-![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
-
-<br/>
+- 🔭 I’m currently working on understand Front End Development tools, languages...
+- 🌱 I’m currently learning React and Node.js
+- 💬 You can ask me about any of my Repositories.
 
  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OsmanAliDurna&theme=chartreuse-dark&layout=compact" alt="languages" width="66%">
  <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="66%"/>
  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="66%" />
 
-[![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/OsmanAliDurna) 
+![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/OsmanAliDurna)
+![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-FFF?style=quare&labelColor=FFF&logo=LinkedIn&logoColor=blue&link=https://www.linkedin.com/in/osman-ali-durna/) 
 
-<a href="https://linkedin.com/in/osman-ali-durna/" target="blank">
-<img align="center" src="https://t0.gstatic.com/images?q=tbn:ANd9GcRMCA3j2A8hfLl9p5UAU5nd9lvqLlNZvqoU4xOsZ192uH4IYS6X" alt="Osman Ali DURNA" height="30" width="40" /></a>
- 
-
-<!--
+ <!--
 **OsmanAliDurna/OsmanAliDurna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+Here are some ideas to know me more:
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...

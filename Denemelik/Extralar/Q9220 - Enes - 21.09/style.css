@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+html {
+  overflow-y: hidden;
+}
+/* body { */
+/*  position: fixed; */
+/* width: 100%; */
+/* } */
+header {
+  background-color: aqua;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+ul {
+  margin-left: 10px;
+}
+h1 {
+  font-size: 30px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline;
+  border: 2px solid red;
+  box-sizing: border-box;
+  width: 30px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+
+  text-align: center;
+
+  color: black;
+  font-weight: 600;
+}
+ul li a:hover {
+  color: white;
+  box-sizing: border-box;
+}
+
+ul li:hover {
+  background-color: blueviolet;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(./school.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  padding: 250px 0 0 30px;
+}
+
+.btns {
+  margin-left: 60px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  background-color: brown;
+  margin-bottom: 0;
+}

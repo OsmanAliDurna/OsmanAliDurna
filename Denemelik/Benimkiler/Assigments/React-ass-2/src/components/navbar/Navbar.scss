@@ -1,0 +1,30 @@
+img{
+    height: 100px;
+}
+
+ul{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(96, 70, 13);
+}
+
+.navbar{
+    height: 100px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(182, 139, 47);
+}

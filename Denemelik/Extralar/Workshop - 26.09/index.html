@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements Çalışmaları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Workshop - 26 / 09 /2023</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Kayıt Formu</a>
+    </nav>
+
+    <main>
+        <h2>Hoş Geldiniz...</h2>
+
+        <form action="">
+            <label for="text">Name : </label>
+
+            <script>
+                let name = prompt("Adınızı Giriniz:");
+                document.write(name);
+            </script>
+
+            <br>
+            <label for="number">Yaş : </label>
+            <script>
+                let yaş = prompt("Yaşınızı Giriniz:");
+                document.write(yaş);
+            </script>
+
+            <br>
+            <label for="number">Boy : </label>
+            <script>
+                let boy = prompt("Boyunuzu Giriniz:");
+                document.write(boy);
+            </script>
+
+            <br>
+            <label for="number">Cinsiyet : </label>
+            <script>
+                let cinsiyet = confirm("Erkek için Tamam'ı Kadın için İptal'i seçiniz.");
+                document.write(cinsiyet ? "Erkek" : "Kadın");
+            </script>
+
+        </form>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

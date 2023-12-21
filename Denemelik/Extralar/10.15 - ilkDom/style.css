@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  height: 10vh;
+}
+nav h1 {
+  text-align: center;
+  background-color: blanchedalmond;
+  height: 100%;
+  line-height: 10vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.content {
+  border: 2px solid black;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content h3 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.content button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  background-color: #313131;
+}
