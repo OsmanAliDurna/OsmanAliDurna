@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there 👋 I'm Osman Ali DURNA.
 
 ![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
 
