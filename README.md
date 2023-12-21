@@ -1,5 +1,7 @@
 ### Hi there 👋 I'm Osman Ali DURNA.
+
 <br/>
+
 ![](https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif)
 
 <br/>
