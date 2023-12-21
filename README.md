@@ -18,12 +18,6 @@
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](link) 
 <a href="https://www.linkedin.com/in/osman-ali-durna/" target="blank"><img align="center" src="https://raw.githubusercontent.com/OsmanAliDurna/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Osman Ali DURNA" height="30" width="40" /></a>
  
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!--
 **OsmanAliDurna/OsmanAliDurna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
