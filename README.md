@@ -14,7 +14,7 @@
  <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="33%"/>
  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="33%" />
 
-[![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](link) 
+[![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/OsmanAliDurna) 
 
 <br/>
 
