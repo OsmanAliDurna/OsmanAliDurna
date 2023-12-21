@@ -2,6 +2,8 @@
 <br/>
 ![](https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif)
 
+<br/>
+
 ![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
 
 <br/>
