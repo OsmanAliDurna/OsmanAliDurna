@@ -5,9 +5,9 @@
 
 <br/>
 
- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OsmanAliDurna&theme=chartreuse-dark&layout=compact" alt="languages" width="100%">
- <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="39%"/>
- <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="39%" />
+ <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OsmanAliDurna&theme=chartreuse-dark&layout=compact" alt="languages" width="33%">
+ <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="33%"/>
+ <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="33%" />
 <!--
 **OsmanAliDurna/OsmanAliDurna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
