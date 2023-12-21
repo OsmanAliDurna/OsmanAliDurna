@@ -16,8 +16,6 @@
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/OsmanAliDurna) 
 
-<br/>
-
 <a href="https://linkedin.com/in/osman-ali-durna/" target="blank">
 <img align="center" src="https://t0.gstatic.com/images?q=tbn:ANd9GcRMCA3j2A8hfLl9p5UAU5nd9lvqLlNZvqoU4xOsZ192uH4IYS6X" alt="Osman Ali DURNA" height="30" width="40" /></a>
  
