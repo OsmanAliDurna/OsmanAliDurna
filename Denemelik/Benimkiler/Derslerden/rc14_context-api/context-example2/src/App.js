@@ -7,14 +7,11 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import PersonDetail from "./pages/PersonDetail"
 import Login from "./pages/Login"
 import PrivateRouter from "./pages/PrivateRouter"
-import { LoginContext } from "./contexts/LoginContext"
-import { useState } from "react"
+import LoginProvider from "./context/LoginContext"
 
 function App() {
-  const [user, setUser] = useState({ email: "", password: "" })
-
   return (
-    <LoginContext.Provider value={{ user, setUser }}>
+    <LoginProvider>
       <BrowserRouter>
         <Navs />
         <Routes>
@@ -31,7 +28,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </LoginContext.Provider>
+    </LoginProvider>
   )
 }
 

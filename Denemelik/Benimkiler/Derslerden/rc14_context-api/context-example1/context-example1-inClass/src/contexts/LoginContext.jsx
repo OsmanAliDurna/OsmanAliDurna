@@ -1,9 +1,4 @@
-import React from 'react'
+import { createContext } from "react"
 
-const LoginContext = () => {
-  return (
-    <div>LoginContext</div>
-  )
-}
-
-export default LoginContext
+//? Login bilgilerini sakalyacak bir context olustur.
+export const LoginContext = createContext()
