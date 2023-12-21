@@ -20,7 +20,7 @@
 <br/>
 
 <a href="https://linkedin.com/in/osman-ali-durna/" target="blank">
-<img align="center" src="https://raw.githubusercontent.com/OsmanAliDurna/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Osman Ali DURNA" height="30" width="40" /></a>
+<img align="center" src="[https://raw.githubusercontent.com/OsmanAliDurna/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg](https://t0.gstatic.com/images?q=tbn:ANd9GcRMCA3j2A8hfLl9p5UAU5nd9lvqLlNZvqoU4xOsZ192uH4IYS6X)" alt="Osman Ali DURNA" height="30" width="40" /></a>
  
 
 <!--
