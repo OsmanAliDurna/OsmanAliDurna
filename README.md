@@ -1,7 +1,10 @@
 ### Hi there 👋 I'm Osman Ali DURNA.
-<br>
+<br/>
+
 ![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
-<br>
+
+<br/>
+
  <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="49%"/>
  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="49%" />
  
