@@ -2,6 +2,8 @@
 
 ![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
  <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="49%"/>
+ <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="49%" />
+ 
 <!--
 **OsmanAliDurna/OsmanAliDurna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
