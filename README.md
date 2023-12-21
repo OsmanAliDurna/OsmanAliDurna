@@ -1,7 +1,7 @@
 ### Hi there 👋 I'm Osman Ali DURNA.
 
 ![](https://komarev.com/ghpvc/?username=OsmanAliDurna)
-
+ <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-light" alt="my github stats" width="49%"/>
 <!--
 **OsmanAliDurna/OsmanAliDurna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
