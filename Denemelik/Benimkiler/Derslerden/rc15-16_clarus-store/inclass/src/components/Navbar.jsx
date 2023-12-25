@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import logo from "../assets/logo.png";
 import { closeNavbar, openNavbar, logoutIcon } from "../helper/icons";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 const navigation = [
   {
@@ -20,7 +20,9 @@ const navigation = [
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-  const {logout} = useContext(AuthContext)
+  const { logout } = useContext(AuthContext);
+  const location = useLocation();
+  console.log(location);
 
   return (
     <nav className="bg-navbarColor md:text-sm">
@@ -47,7 +49,11 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className={`${show ? "flex flex-col pb-2" : "hidden"} flex-1 items-center md:flex md:flex-row`}>
+        <div
+          className={`${
+            show ? "flex flex-col pb-2" : "hidden"
+          } flex-1 items-center md:flex md:flex-row`}
+        >
           <ul className="space-y-6 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item) => (
               <li
@@ -56,7 +62,9 @@ const Navbar = () => {
               >
                 <NavLink
                   to={item.path}
-                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white`}
+                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white ${
+                    location.pathname === item.path ? "underline scale-150" : ""
+                  }`}
                 >
                   {item.title}
                 </NavLink>
