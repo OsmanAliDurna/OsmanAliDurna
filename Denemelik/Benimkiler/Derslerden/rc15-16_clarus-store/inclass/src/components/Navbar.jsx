@@ -21,7 +21,7 @@ const navigation = [
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const { logout } = useContext(AuthContext);
-  const location = useLocation();
+  const location = useLocation();//!useLocation hook'u, geçerli konumu bir nesne olarak döndürür. Bu nesne, routerdan gelen konum yolunu, konum parametrelerini ve konum durumunu içerir.
   console.log(location);
 
   return (
