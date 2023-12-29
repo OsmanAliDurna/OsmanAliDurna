@@ -1,9 +1,5 @@
-import {
-  initializeApp
-} from "firebase/app";
-import {
-  getAuth
-} from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 // TODO: Replace the following with your app's Firebase project configuration
 //* https://firebase.google.com/docs/auth/web/start
