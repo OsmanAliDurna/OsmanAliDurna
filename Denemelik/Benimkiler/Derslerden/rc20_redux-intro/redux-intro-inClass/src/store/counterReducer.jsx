@@ -1,4 +1,4 @@
-const initiailState = {
+const initialState = {
   count: 0,
 };
 
@@ -10,14 +10,14 @@ export const increment = () => ({ type: INC });
 export const clear = () => ({ type: CLR });
 export const decrement = () => ({ type: DEC });
 
-export const counterReducer = (state = initiailState, action) => {
+export const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case INC:
       return { count: state.count + 1 };
     case DEC:
       return { count: state.count - 1 };
     case CLR:
-      return initiailState;
+      return initialState;
     default:
       return state;
   }

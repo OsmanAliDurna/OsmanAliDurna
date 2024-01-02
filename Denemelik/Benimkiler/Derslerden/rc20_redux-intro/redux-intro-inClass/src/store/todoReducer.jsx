@@ -1,32 +1,41 @@
-const initiailState = {
+const initialState = {
   todoList: [
     { id: new Date().getTime(), text: "Learn Redux", completed: false },
   ],
 };
 
 export const ADD = "ADD";
-export const CLR = "CLR";
+export const CLRL = "CLRL";
 export const DEL = "DEL";
-export const CMP = "CMP";
+export const TGL = "TGL";
 
-export const addTodo = (text) => ({
-  type: ADD,
-  payload: text
-});
-export const clearTodo = () => ({ type: CLR });
-export const completion = () => ({ type: CMP });
-export const deletion = () => ({ type: DEL });
+export const addTodo = (payload) => ({ type: ADD, payload });
+export const clearTodo = () => ({ type: CLRL });
+export const toggleTodo = (payload) => ({ type: TGL, payload });
+export const deleteTodo = (payload) => ({ type: DEL, payload });
 
-export const todoReducer = (state = initiailState, { type, payload }) => {
+//? Reducer
+export const todoReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ADD:
-      return { ...state, ...payload };
+      return {
+        todoList: [
+          ...state.todoList,
+          { id: new Date().getTime(), text: payload, completed: false },
+        ],
+      };
     case DEL:
-      return { ...state, ...payload };
-    case CMP:
-      return { ...state, ...payload };
-    case CLR:
-      return initiailState;
+      return {
+        todoList: state.todoList.filter((item) => item.id !== payload),
+      };
+    case TGL:
+      return {
+        todoList: state.todoList.map((e) =>
+          e.id === payload ? { ...e, completed: !e.completed } : e
+        ),
+      };
+    case CLRL:
+      return initialState;
     default:
       return state;
   }
