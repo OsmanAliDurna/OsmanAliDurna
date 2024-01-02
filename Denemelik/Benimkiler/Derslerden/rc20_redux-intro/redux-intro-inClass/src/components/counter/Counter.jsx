@@ -1,17 +1,37 @@
-import "./Counter.css"
+import "./Counter.css";
+import { useDispatch, useSelector } from "react-redux";
+
+import { increment, decrement, clear } from "../../store/counterReducer";
 
 const Counter = () => {
+  const count = useSelector((state) => state.counterReducer.count);
+  const dispatch = useDispatch();
   return (
     <div className="app">
       <h2 className="counter-header">Counter With Redux</h2>
-      <h1>counter:0</h1>
+      <h1>counter: {count}</h1>
       <div>
-        <button className="counter-button positive">increase</button>
-        <button className="counter-button zero">reset</button>
-        <button className="counter-button negative">decrease</button>
+        <button
+          onClick={() => dispatch(increment())}
+          className="counter-button positive"
+        >
+          increase
+        </button>
+        <button
+          onClick={() => dispatch(clear())}
+          className="counter-button zero"
+        >
+          reset
+        </button>
+        <button
+          onClick={() => dispatch(decrement())}
+          className="counter-button negative"
+        >
+          decrease
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;
