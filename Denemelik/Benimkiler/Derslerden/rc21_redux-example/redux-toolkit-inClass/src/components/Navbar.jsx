@@ -5,9 +5,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const { user } = useSelector((state) => state.auth);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
@@ -21,7 +23,7 @@ export default function Navbar() {
             Clarusway News
           </Typography>
 
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">{user ? "Logout" : "Login"}</Button>
         </Toolbar>
       </AppBar>
     </Box>
