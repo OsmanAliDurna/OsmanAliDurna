@@ -5,11 +5,23 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { CardMedia } from "@mui/material";
+import { useEffect } from "react";
+import { getNewsData } from "../features/newApiSlice";
+import { useDispatch, useSelector } from "react-redux";
+import loadingGif from "../assets/loading.gif"
 
 const News = () => {
+  const dispatch = useDispatch();
+  const { newsData, error, loading } = useSelector((state) => state.newsApi);
+
+  useEffect(() => {
+    dispatch(getNewsData());
+  }, []);
+
   return (
     <>
       <h1>NEWS</h1>
+      {/* {loading && loading.gif} */}
       <Box
         xs={{ d: "flex" }}
         display="flex"
@@ -17,7 +29,7 @@ const News = () => {
         justifyContent="space-evenly"
         flexWrap="wrap"
       >
-        {[1, 2, 3].map((item, index) => (
+        {newsData?.map((item, index) => (
           <Card sx={{ maxWidth: 345, m: 5, maxHeight: 600 }} key={index}>
             <CardMedia
               component="img"
