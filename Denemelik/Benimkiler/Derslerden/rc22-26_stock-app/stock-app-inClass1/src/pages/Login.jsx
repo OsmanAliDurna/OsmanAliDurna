@@ -1,19 +1,20 @@
-import Avatar from "@mui/material/Avatar";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import LockIcon from "@mui/icons-material/Lock";
-import image from "../assets/result.svg";
-import { Link } from "react-router-dom";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
-import { Formik, Form } from "formik";
-import { object, string } from "yup";
-import useAuthCalls from "../service/useAuthCalls";
+import Avatar from "@mui/material/Avatar"
+import Container from "@mui/material/Container"
+import Grid from "@mui/material/Grid"
+import Typography from "@mui/material/Typography"
+import LockIcon from "@mui/icons-material/Lock"
+import image from "../assets/result.svg"
+import { Link } from "react-router-dom"
+import Box from "@mui/material/Box"
+import TextField from "@mui/material/TextField"
+import { Button } from "@mui/material"
+import { Formik, Form } from "formik"
+import { object, string } from "yup"
+import useAuthCalls from "../service/useAuthCalls"
 
 const Login = () => {
-  const { login } = useAuthCalls();
+  const { login } = useAuthCalls()
+
   const loginSchema = object({
     email: string()
       .email("Lütfen geçerli bir email giriniz")
@@ -29,7 +30,7 @@ const Login = () => {
         /[@$!%*?&]+/,
         "Şifre en az bir özel karakter (@$!%*?&) içermelidir"
       ),
-  });
+  })
   return (
     <Container maxWidth="lg">
       <Grid
@@ -72,15 +73,15 @@ const Login = () => {
             validationSchema={loginSchema}
             onSubmit={(values, actions) => {
               //TODO login(post) istegi
-              login(values);
-              actions.resetForm();
-              actions.setSubmitting(false); //? isSubmitting
+              login(values)
+              actions.resetForm()
+              actions.setSubmitting(false) //? isSubmitting
               //? veriler global state'e aktırlabilir
               //? navigasyon yapılabilir
               //? tost yapılabilr
             }}
           >
-            {({ handleChange, handleBlur, values, touched, errors }) => (
+            {({ handleChange, values, touched, errors, handleBlur }) => (
               <Form>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
                   <TextField
@@ -93,7 +94,7 @@ const Login = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     error={touched.email && Boolean(errors.email)}
-                    helperText={touched.email && errors.email}
+                    helperText={errors.email}
                   />
                   <TextField
                     label="password"
@@ -105,7 +106,7 @@ const Login = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     error={touched.password && Boolean(errors.password)}
-                    helperText={touched.password && errors.password}
+                    helperText={errors.password}
                   />
                   <Button variant="contained" type="submit">
                     Submit
@@ -127,7 +128,7 @@ const Login = () => {
         </Grid>
       </Grid>
     </Container>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login
