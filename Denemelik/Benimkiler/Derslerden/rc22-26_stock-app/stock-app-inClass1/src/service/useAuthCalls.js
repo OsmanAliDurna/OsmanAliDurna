@@ -7,7 +7,8 @@ import {
     useNavigate
 } from "react-router-dom"
 import {
-    useDispatch
+    useDispatch,
+    // useSelector
 } from "react-redux"
 import {
     fetchFail,
@@ -16,10 +17,18 @@ import {
     registerSuccess,
     logOut
 } from "../features/authSlice"
+import useAxios from "./useAxios"
 
 const useAuthCalls = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
+    // const {
+    //     token
+    // } = useSelector(state => state.auth.token)
+    const {
+        axiosWithToken
+    } = useAxios()
+
     const login = async (userInfo) => {
         dispatch(fetchStart())
         try {
@@ -60,9 +69,14 @@ const useAuthCalls = () => {
     const logout = async () => {
         dispatch(fetchStart())
         try {
-            await axios.get(
-                `${process.env.REACT_APP_BASE_URL}/auth/logout`
-            )
+            // await axios.post(
+            //     `${process.env.REACT_APP_BASE_URL}/auth/logout`, {
+            //         headers: {
+            //             Authorization: `Token ${token}`
+            //         }
+            //     }
+            // )
+            await axiosWithToken("/auth/logout")
             dispatch(logOut())
             toastSuccessNotify("Logout işlemi başarılı.")
         } catch (error) {

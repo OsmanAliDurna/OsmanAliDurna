@@ -30,6 +30,7 @@ const authSlice = createSlice({
     },
     logOut: (state) => {
       state.user = "";
+      state.loading = false;
       state.token = "";
     },
   },

@@ -29,9 +29,9 @@ const Register = () => {
         /[@$!%*?&]+/,
         "Şifre en az bir özel karakter (@$!%*?&) içermelidir"
       ),
-    username: string().required(),
-    lastName: string().required(),
-    firstName: string().required(),
+    username: string().required("Username girişi zorunludur"),
+    lastName: string().required("Soyisim girişi zorunludur"),
+    firstName: string().required("İsim girişi zorunludur"),
   });
   return (
     <Container maxWidth="lg">
