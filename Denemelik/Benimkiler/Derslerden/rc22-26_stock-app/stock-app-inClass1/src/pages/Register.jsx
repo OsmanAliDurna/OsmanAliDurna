@@ -6,10 +6,9 @@ import image from "../assets/result.svg";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import { Link, useNavigate } from "react-router-dom";
-import { Form, Formik } from "formik";
-
 import TextField from "@mui/material/TextField";
+import { Link } from "react-router-dom";
+import { Form, Formik } from "formik";
 import { object, string } from "yup";
 import useAuthCalls from "../service/useAuthCalls";
 
