@@ -5,7 +5,6 @@ Here are some ideas to know me more:
 - 🌱 I’m currently learning React and Node.js
 - 💬 You can ask me about any of my Repositories.
 
- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OsmanAliDurna&theme=chartreuse-dark&layout=compact" alt="languages" width="66%">
  <img src="https://github-readme-stats.vercel.app/api?username=OsmanAliDurna&theme=chartreuse-dark" alt="my github stats" width="66%"/>
  <img src="https://github-readme-streak-stats.herokuapp.com/?user=OsmanAliDurna&theme=chartreuse-dark" alt="my commit status" width="66%" />
 
