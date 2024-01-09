@@ -1,16 +1,15 @@
-import InboxIcon from "@mui/icons-material/MoveToInbox"
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
-import ListItemButton from "@mui/material/ListItemButton"
-import ListItemIcon from "@mui/material/ListItemIcon"
-import ListItemText from "@mui/material/ListItemText"
-import MailIcon from "@mui/icons-material/Mail"
-import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard"
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney"
-import InventoryIcon from "@mui/icons-material/Inventory"
-import StoreIcon from "@mui/icons-material/Store"
-import StarsIcon from "@mui/icons-material/Stars"
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import InventoryIcon from "@mui/icons-material/Inventory";
+import StoreIcon from "@mui/icons-material/Store";
+import StarsIcon from "@mui/icons-material/Stars";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useNavigate } from "react-router-dom";
 
 const icons = [
   {
@@ -43,25 +42,22 @@ const icons = [
     icon: <InventoryIcon />,
     url: "/stock/products/",
   },
-]
+];
 
 const MenuListItems = () => {
+  const navigate = useNavigate();
   return (
-    <div>
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  )
-}
+    <List>
+      {icons.map(({ icon, url, title }, index) => (
+        <ListItem key={index} disablePadding onClick={() => navigate(url)}>
+          <ListItemButton>
+            <ListItemIcon>{icon}</ListItemIcon>
+            <ListItemText primary={title} />
+          </ListItemButton>
+        </ListItem>
+      ))}
+    </List>
+  );
+};
 
-export default MenuListItems
+export default MenuListItems;

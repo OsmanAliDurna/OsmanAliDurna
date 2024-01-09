@@ -1,7 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  id: "",
+  firms: [],
+  products: [],
+  purchases: [],
+  brands: [],
+  
 };
 
 const stockSlice = createSlice({
