@@ -1,30 +1,30 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import { Button } from "@mui/material";
-import { useSelector } from "react-redux";
-import useAuthCalls from "../service/useAuthCalls";
-import MenuListItems from "../components/MenuListItems";
-import { Outlet } from "react-router-dom";
+import * as React from "react"
+import AppBar from "@mui/material/AppBar"
+import Box from "@mui/material/Box"
+import CssBaseline from "@mui/material/CssBaseline"
+import Divider from "@mui/material/Divider"
+import Drawer from "@mui/material/Drawer"
+import IconButton from "@mui/material/IconButton"
+import MenuIcon from "@mui/icons-material/Menu"
+import Toolbar from "@mui/material/Toolbar"
+import Typography from "@mui/material/Typography"
+import { Button } from "@mui/material"
+import { useSelector } from "react-redux"
+import useAuthCalls from "../service/useAuthCalls"
+import MenuListItems from "../components/MenuListItems"
+import { Outlet } from "react-router-dom"
 
-const drawerWidth = 200;
+const drawerWidth = 200
 
 function Dashboard(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const { user } = useSelector((state) => state.auth);
-  const { logout } = useAuthCalls();
+  const { window } = props
+  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const { user } = useSelector((state) => state.auth)
+  const { logout } = useAuthCalls()
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+    setMobileOpen(!mobileOpen)
+  }
 
   const drawer = (
     <div>
@@ -32,11 +32,11 @@ function Dashboard(props) {
       <Divider />
       <MenuListItems />
     </div>
-  );
+  )
 
   // Remove this const when copying and pasting into your project.
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    window !== undefined ? () => window().document.body : undefined
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -118,10 +118,10 @@ function Dashboard(props) {
         }}
       >
         <Toolbar />
-        <Outlet></Outlet>
+        <Outlet />
       </Box>
     </Box>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard
