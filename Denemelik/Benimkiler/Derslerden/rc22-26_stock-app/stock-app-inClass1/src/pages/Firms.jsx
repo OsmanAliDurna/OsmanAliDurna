@@ -1,18 +1,21 @@
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { useEffect } from "react";
-import useStockCalls from "../service/useStockCalls";
-import { useSelector } from "react-redux";
-import { Grid } from "@mui/material";
-import FirmCard from "../components/FirmCard";
+import Button from "@mui/material/Button"
+import Typography from "@mui/material/Typography"
+import { useEffect } from "react"
+import useStockCalls from "../service/useStockCalls"
+import { useSelector } from "react-redux"
+import { Grid } from "@mui/material"
+import FirmCard from "../components/FirmCard"
 
 const Firms = () => {
-  const { getStocks } = useStockCalls();
-  const { firms } = useSelector((state) => state.stock);
-
+  // const { getFirms, getSales } = useStockCalls()
+  const { getStocks } = useStockCalls()
+  const { firms } = useSelector((state) => state.stock)
   useEffect(() => {
-    getStocks("firms");
-  }, []);
+    // getFirms()
+    getStocks("firms")
+  }, [])
+
+  console.log(firms)
 
   return (
     <div>
@@ -21,7 +24,7 @@ const Firms = () => {
       </Typography>
       <Button variant="contained">New Firm</Button>
 
-      <Grid container>
+      <Grid container gap={2} mt={3} justifyContent={"center"}>
         {firms?.map((firm) => (
           <Grid item key={firm._id}>
             <FirmCard firm={firm} />
@@ -29,7 +32,7 @@ const Firms = () => {
         ))}
       </Grid>
     </div>
-  );
-};
+  )
+}
 
-export default Firms;
+export default Firms
