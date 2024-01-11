@@ -7,15 +7,11 @@ import { Grid } from "@mui/material"
 import FirmCard from "../components/FirmCard"
 
 const Firms = () => {
-  // const { getFirms, getSales } = useStockCalls()
   const { getStocks } = useStockCalls()
   const { firms } = useSelector((state) => state.stock)
   useEffect(() => {
-    // getFirms()
     getStocks("firms")
   }, [])
-
-  console.log(firms)
 
   return (
     <div>
