@@ -3,14 +3,21 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import { modalStyle } from "../styles/globalStyles";
+import useStockCalls from "../service/useStockCalls";
 
 export default function FirmModal({ open, handleClose, info, setInfo }) {
+  const { postStock, putStock } = useStockCalls();
   const handleChange = (e) => {
     setInfo({ ...info, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (info._id) {
+      putStock("firms", info)
+    } else {
+      postStock("firms", info)
+    }
     handleClose();
   };
 
@@ -68,11 +75,7 @@ export default function FirmModal({ open, handleClose, info, setInfo }) {
               onChange={handleChange}
               required
             />
-            <Button
-              type="submit"
-              variant="contained"
-              onClick={() => handleClose()}
-            >
+            <Button type="submit" variant="contained">
               Submit
             </Button>
           </Box>
