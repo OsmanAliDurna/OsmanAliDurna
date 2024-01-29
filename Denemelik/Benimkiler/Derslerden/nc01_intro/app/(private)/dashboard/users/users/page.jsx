@@ -1,26 +1,19 @@
 import GoBackButton from "@/components/GoBack";
-import Link from "next/link";
+// import { useParams } from "next/navigation";
 import React from "react";
 
-const Users = () => {
-  const userArr = [1, 2, 3, 4];
+const UserDetail = ({ params }) => {
+  //* client componentler için useParam() hooku kullanabiliriz
+  // const {userId}= useParams()
+  //   console.log(params);
+  const { userId } = params;
   return (
     <div>
-      <h1 className="text-2xl text-center">Users</h1>
-      <nav className="flex flex-col p-2">
-        {userArr.map((user) => (
-          <Link
-            className="underline"
-            key={user}
-            href={`/dashboard/users/${user}`}
-          >
-            Go user-{user}
-          </Link>
-        ))}
-      </nav>
+      <h1 className="text-2xl text-center">UserDetail</h1>
+      <p>user - {userId}</p>
       <GoBackButton />
     </div>
   );
 };
 
-export default Users;
+export default UserDetail;
