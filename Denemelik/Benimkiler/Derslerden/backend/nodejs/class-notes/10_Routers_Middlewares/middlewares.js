@@ -106,12 +106,13 @@ app.get('/', (req, res) => {
     })
 })
 
-/* ------------------------------------------------------- */
+/* ------------------------------------------------------- *
 
 const middleFunc1 = (req, res, next) => {
 
     req.message1 = 'middleFunc1 started.'
     next()
+    // next('route')
 }
 
 const middleFunc2 = (req, res, next) => {
@@ -129,9 +130,9 @@ const middleFunc2 = (req, res, next) => {
 // app.use([middleFunc1, middleFunc2]) // all paths
 //? It can use URL:
 // app.get('/abc', [middleFunc1, middleFunc2]) // only /abc and only get
-app.use('/abc', [middleFunc1, middleFunc2]) // only /abc/* and all methods
+// app.use('/abc', [middleFunc1, middleFunc2]) // only /abc/* and all methods
 
-app.all('/*', (req, res) => {
+app.get('/*', middleFunc1, middleFunc2, (req, res) => {
     res.send({
         message1: req.message1,
         message2: req.message2,
@@ -139,11 +140,30 @@ app.all('/*', (req, res) => {
     })
 })
 
+// started by next('route'):
+app.get('/', (req, res) => {
+    res.send({
+        message: 'next route'
+    })
+})
+
 /* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
-/* ------------------------------------------------------- */
+//? Move to file:
+
+// const middleFuncs = require('./middlewares/') // in array
+// app.use(middleFuncs)
+
+const { middleFunc1, middleFunc2 } = require('./middlewares/') // in object
+app.use(middleFunc1, middleFunc2)
+
+
+app.get('/*', (req, res) => {
+    res.send({
+        message1: req.message1,
+        message2: req.message2,
+        message: "Finished",
+    })
+})
+
 /* ------------------------------------------------------- */
 app.listen(PORT, () => console.log("Running: http://127.0.0.1:" + PORT));

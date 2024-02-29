@@ -13,6 +13,10 @@ const router = require('express').Router()
 // router.get('/about', (req, res) => res.send({ message: "About Area" }))
 // router.get('/user/:id', (req, res) => res.send({ message: req.params.id }))
 
+const { middleFunc1, middleFunc2 } = require('../middlewares/')
+
+router.use(middleFunc1, middleFunc2)
+
 //? router.route()
 router.route('/')
     .get((req, res) => res.send(' message: "get"'))
