@@ -126,11 +126,12 @@ const middleFunc2 = (req, res, next) => {
 //? Alternative:
 // app.use(middleFunc1, middleFunc2)
 //? Alternative:
-app.use([middleFunc1, middleFunc2])
+// app.use([middleFunc1, middleFunc2]) // all paths
 //? It can use URL:
-app.use('/abc', [middleFunc1, middleFunc2])
+// app.get('/abc', [middleFunc1, middleFunc2]) // only /abc and only get
+app.use('/abc', [middleFunc1, middleFunc2]) // only /abc/* and all methods
 
-app.get('/*', (req, res) => {
+app.all('/*', (req, res) => {
     res.send({
         message1: req.message1,
         message2: req.message2,
