@@ -1,7 +1,7 @@
 {
-  "name": "12-Models_Todo",
+  "name": "12-models_todo",
   "version": "1.0.0",
-  "description": "![](./intro-mvc.png)",
+  "description": "## What? Why?",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
