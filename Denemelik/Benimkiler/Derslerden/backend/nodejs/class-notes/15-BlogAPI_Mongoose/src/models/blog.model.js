@@ -5,7 +5,6 @@
 
 const mongoose=require("mongoose")
 
-
 const blogPostSchema= new mongoose.Schema(
     {
      //_id
@@ -29,6 +28,7 @@ const blogPostSchema= new mongoose.Schema(
         timestamps:true
     }
 )
+
 // mongoose.model('model ismi','hangi şemadan')
 
 // const BlogPostModel= mongoose.model('BlogPost',blogPostSchema)
@@ -39,10 +39,7 @@ const blogPostSchema= new mongoose.Schema(
 
 module.exports={
     BlogPost:  mongoose.model('BlogPost',blogPostSchema)
-
 }
-
-
 
 // const nameSchema= new mongoose.Schema({fields},{tablo adı})
 /*

@@ -5,7 +5,7 @@
 
 require("express-async-errors")
 
-const { BlogPost}=require("../models/blog.model")
+const {BlogPost} = require("../models/blog.model")
 
 // module.exports={
 //     "key":"value",
