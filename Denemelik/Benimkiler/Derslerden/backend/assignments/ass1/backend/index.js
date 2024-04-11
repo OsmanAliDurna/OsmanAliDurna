@@ -1,13 +1,13 @@
 "use strict"
 const express = require("express");
 const { mongooseConnection } = require("./startup/mongooseConnection");
-const {todoRouter} = require("./routes/todo.routes")
+const {todoRouter} = require("./routes/todo.routes");
+const cors = require("cors");
+const app = express();
+app.use(cors({origin:"http://localhost:3000"}))
+app.use(express.json());
 
-const app = express()
-
-app.use(express.json())
-
-require("dotenv").config()
+require("dotenv").config();
 const PORT = process.env?.PORT || 8000;
 const HOST = process.env?.HOST || "127.0.0.1";
 

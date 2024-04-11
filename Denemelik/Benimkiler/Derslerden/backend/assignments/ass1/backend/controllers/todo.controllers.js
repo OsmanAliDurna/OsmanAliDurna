@@ -1,78 +1,75 @@
-"use strict"
+"use strict";
 
 const {
     CustomError
 } = require("../errors/customErrors");
 const {
     Todo
-} = require("../models/todo.models")
+} = require("../models/todo.models");
 
 const todo = {
     list: async (req, res) => {
-
-        const data = await Todo.find({})
-
+        const data = await Todo.find({});
         res.status(200).send({
             isError: false,
             body: data,
         });
     },
+
     create: async (req, res) => {
-
-        const data = await Todo.create(req.body)
-
+        const data = await Todo.create(req.body);
         res.status(201).send({
-            isError: false,
             body: data,
+            isError: false,
         });
     },
+
     read: async (req, res) => {
         // const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
-        // if (!idIsValid) {
-        //     throw new CustomError("id is not valid.", 400)
-        // }
+        // if (!idIsValid) throw new CustomError("id is not valid", 400);
+
         const data = await Todo.findOne({
             _id: req.params.id
-        })
-
-        res.status(201).send({
+        });
+        res.status(200).send({
             isError: false,
             body: data,
         });
     },
+
     update: async (req, res) => {
         // const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
-        // if (!idIsValid) {
-        //     throw new CustomError("id is not valid.", 400)
-        // }
+        // if (!idIsValid) throw new CustomError("id is not valid", 400);
         const data = await Todo.updateOne({
             _id: req.params.id
         }, req.body, {
-            runValidators: true
-        })
+            runValidators: true,
+        });
         const updated = await Todo.findOne({
             _id: req.params.id
-        })
+        });
         res.status(202).send({
             isError: false,
             data,
-            body: updated,
+            body: updated
         });
     },
+
     delete: async (req, res) => {
         // const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
-        // if (!idIsValid) {
-        //     throw new CustomError("id is not valid.", 400)
-        // }
+        // if (!idIsValid) throw new CustomError("id is not valid", 400);
         const data = await Todo.deleteOne({
             _id: req.params.id
-        })
-        if (!data.deletedCount) throw new CustomError("not deleted", 409)
+        });
+        //deletedCount
+        if (!data.deletedCount) throw new CustomError("not deleted", 409);
         res.status(204).send({
             isError: false,
-            body: data,
+            body: data
         });
-    }
-}
+    },
+};
 
-module.export = {todo};
+module.exports = {
+    todo
+};
