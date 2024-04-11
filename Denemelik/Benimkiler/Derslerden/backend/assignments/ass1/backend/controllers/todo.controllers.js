@@ -27,10 +27,10 @@ const todo = {
         });
     },
     read: async (req, res) => {
-        const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
-        if (!idIsValid) {
-            throw new CustomError("id is not valid.", 400)
-        }
+        // const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
+        // if (!idIsValid) {
+        //     throw new CustomError("id is not valid.", 400)
+        // }
         const data = await Todo.findOne({
             _id: req.params.id
         })
@@ -41,10 +41,10 @@ const todo = {
         });
     },
     update: async (req, res) => {
-        const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
-        if (!idIsValid) {
-            throw new CustomError("id is not valid.", 400)
-        }
+        // const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
+        // if (!idIsValid) {
+        //     throw new CustomError("id is not valid.", 400)
+        // }
         const data = await Todo.updateOne({
             _id: req.params.id
         }, req.body, {
@@ -60,10 +60,10 @@ const todo = {
         });
     },
     delete: async (req, res) => {
-        const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
-        if (!idIsValid) {
-            throw new CustomError("id is not valid.", 400)
-        }
+        // const idIsValid = mongoose.Types.ObjectId.isValid(req.params.id);
+        // if (!idIsValid) {
+        //     throw new CustomError("id is not valid.", 400)
+        // }
         const data = await Todo.deleteOne({
             _id: req.params.id
         })

@@ -27,8 +27,9 @@ const todoSchema = new mongoose.Schema({
         type: String,
         enum: {
             values: Object.values(PRIORITIES),
-            message: "low, normal or high could be select."
+            message: "low, normal or high could be select.",
         },
+        default: "normal",
     }
 });
 
